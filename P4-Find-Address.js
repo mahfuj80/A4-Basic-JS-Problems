@@ -1,29 +1,22 @@
 function findAddress(obj) {
-    let result = [];
+    let keys = [];
+    let values = [];
     for (let key in obj) {
-        const value = obj[key];
-        if (value.length > 0) {
-            result.push(value);
-        } else {
-            if (typeof value === 'number') {
-                result.push(value);
-            } else {
-                if (value.length < 1) {
-                    result.push(",__")
-                }
-            }
-        }
+        keys.push(key);
     }
-    if (result.length === 3) {
-        return finalResult = result[0] + "," + result[1] + "," + result[2];
-    } else if (result.length === 2) {
-        return finalResult = result[0] + "," + result[1] + "," + "__";
+    if (keys.includes('street') && keys.includes('house') && keys.includes('society')) {
+        values.push(obj.street, obj.house, obj.society);
+        return values[0] + "," + values[1] + ',' + values[2];
+    } else if (keys.includes('street') && !keys.includes('house') && keys.includes('society')) {
+        values.push(obj.street, obj.society);
+        return values[0] + "," + '__' + ',' + values[1];
+    } else if (!keys.includes('street') && !keys.includes('house') && keys.includes('society')) {
+        values.push(obj.society);
+        return "__" + "," + '__' + ',' + values[0];
+    } else if (keys.includes('street') && !keys.includes('house') && !keys.includes('society')) {
+        values.push(obj.street);
+        return values[0] + "," + '__' + ',' + '__';
+    } else if (!keys.includes('street') && !keys.includes('house') && !keys.includes('society')) {
+        return '__' + "," + '__' + ',' + '__';
     }
 }
-
-const address = {
-    street: 10,
-    house: '13A'
-}
-
-console.log(findAddress(address));

@@ -1,0 +1,128 @@
+Problem - 1 (basic math)
+You are given a function called cubeNumber(). The function takes an input number.
+Task:
+1. Cube the input number and return the result from the function.
+2. Bonus: Input is not number type, what else can you do?
+From the Bay function.
+Sample Input Sample Output
+3 27
+4 64
+
+Note: A negative or 0 field that does not match the validity date is ignored. I mean these
+Return the input cube. We will only check for positives in the system.
+
+Function signature/sample
+function cubeNumber(number) {
+}
+
+
+
+
+
+
+
+Problem - 2
+1. You will be given a function called “matchFinder()” which will take a string as input.
+Task:
+1. If you can find a complete match of the second string with any part of the first string, then you are in the field.
+If it returns boolean you must return true.
+2. And if you can't find the full match in that field you will return boolean false.
+3. Bonus: Data will validate whether the input string is valid or not. If double or any is an input string
+Otherwise, you will return a small amount of money.
+
+Sample Input Sample Output
+“John Doe”, “ohn” is true
+“JavaScript”, “Code” is false
+“Peter Parker”, “Pen” is false
+“Peter Parker”,”pet” is false
+
+Function definition
+function matchFinder(string1, string2) {
+}
+
+
+
+
+
+Problem - 3
+Then you need to write a function called sortMaker(). The parameter of this function will be an array and
+This array will always contain two elements.
+Task:
+1. If the second element of the array is a positive number, you return the array in ascending to descending order.
+will do
+2. If the two elements are the same, you will return this string: “equal”
+3. Bonus: If any element of the array is a negative number, you will return “Invalid” in that field.
+input”
+Sample Input Sample Output
+
+[2,3] [3,2]
+[4,2] [4,2]
+[4,4] equals
+[1,2] [2,1]
+[4,-2] Invalid Input
+Note: 0 cannot be skipped. Meaning if [0,1] is like this you can't return with [1,0]. We are
+Do not check with such input while doing.
+
+Function definition
+function sortMaker(arr) {
+}
+
+
+
+
+
+
+
+
+Problem - 4
+You will be given a function called “findAddress()” which takes an object as input. of Object
+There will be three properties.
+Task:
+1. You have to return the output in the format of the 1st sample output.
+2. Bonus: If any property of object is missing, double underscore that part in the field.
+will be replaced with (in the format of the 2nd output)
+Input Output
+{street:10,house:“15A”,society:“Earth
+Perfect”}
+
+10,15A,Earth Perfect
+
+{street:10,society:“Earth Perfect”} 10,__,Earth Perfect
+
+{street:10} 10,__,__
+
+Function definition:
+function findAddress(obj) {
+}
+
+
+
+
+
+
+
+
+
+
+Problem - 5
+Do you go to the shop to buy a chip with a cheetah note? Create a function called canPay() that
+There are 2 inputs: an array, and some numbers.
+1. Pay your retail amount for each element of the array
+1 taka
+2 taka
+5 taka
+2. The second input is the price of the chips.
+Task:
+1. Returns boolean true if the retail amount is equal to or greater than the price of the chips.
+will do
+2. And if the sum of the notes is less than the value of the chips, the field will return boolean false.
+3. Bonus: Check if first element of input is empty array. empty array
+Please turn it back.
+
+Sample Input Sample Output
+[1,2,5],10 false
+[1,5,5],10 true
+
+Function definition:
+function canPay(changeArray, totalDue) {
+}
