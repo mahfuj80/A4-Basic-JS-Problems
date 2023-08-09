@@ -14,3 +14,5 @@ function sortMaker(arr) {
     }
 
 }
+const numbers = [-2, 2];
+console.log(sortMaker(numbers));

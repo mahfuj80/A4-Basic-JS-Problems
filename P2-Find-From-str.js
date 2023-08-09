@@ -5,3 +5,5 @@ function matchFinder(string1, string2) {
         return string1.includes(string2);
     }
 }
+
+console.log(matchFinder('the quick', 'ick'));

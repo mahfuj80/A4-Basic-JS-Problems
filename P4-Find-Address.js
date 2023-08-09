@@ -20,3 +20,10 @@ function findAddress(obj) {
         return '__' + "," + '__' + ',' + '__';
     }
 }
+
+const address = {
+    street: 10,
+    house: '15A',
+    society: 'Earth Perfect'
+}
+console.log(findAddress(address));
