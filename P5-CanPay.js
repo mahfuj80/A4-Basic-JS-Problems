@@ -6,13 +6,9 @@ function canPay(changeArray, totalDue) {
         for (let value of changeArray) {
             sum = sum + value;
         }
-        if (sum > totalDue) {
-            return true;
-        } else {
-            return false;
-        }
+        return sum >= totalDue;
     }
 }
 
-const arr = [20, 3, 4];
+const arr = [2, 3, 4];
 console.log(canPay(arr, 20));
